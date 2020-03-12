@@ -1,6 +1,11 @@
 @import "compass/reset";
 @import "compass/css3";
 
+$black: #000;
+$red: #d9534f;
+$yellow: #f0ad4e;
+$green: #5cb85c;
+
 body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -16,7 +21,7 @@ body {
 
 
 input[type="text"],input[type="password"] {
-    border:1px solid #000;
+    border:1px solid $black;
     padding:5px;
     margin:10px 5px 10px 5px;
 
@@ -24,7 +29,7 @@ input[type="text"],input[type="password"] {
 }
 
 input[type="submit"] {
-    border:1px solid #000;
+    border:1px solid $black;
     border-radius:0;
     background-color:#fafafa;
     margin:10px 5px 10px 5px;
@@ -50,19 +55,20 @@ label {
     font-size:11px;
     font-weight:600;
 
+    &.error {
+        color:$red;
+    }
+
+    &.warning {
+        color:$yellow;
+    }
+
+    &.success {
+        color:$green;
+    }
 }
 
-.feedback.error {
-    color:#d9534f;
-}
 
-.feedback.warning {
-    color:#f0ad4e;
-}
-
-.feedback.success {
-    color:#5cb85c;
-}
 
 .strengthIndicator {
     margin:10px 5px 10px 5px;
@@ -107,17 +113,17 @@ label {
 
 .error .strengthIndicator::before {
     width: 10%;
-    background-color: #d9534f;
+    background-color: $red;
 }
 
 .warning .strengthIndicator::before {
     width: 60%;
-    background-color: #f0ad4e;
+    background-color: $yellow;
 }
 
 .success .strengthIndicator::before {
     width: 100%;
-    background-color: #5cb85c;
+    background-color: $green;
 }
 
 .feedback.error, .feedback.warning, .feedback.success {
