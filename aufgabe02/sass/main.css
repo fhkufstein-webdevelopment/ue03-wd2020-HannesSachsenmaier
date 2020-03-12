@@ -1,69 +1,100 @@
-/*
-Error: Undefined mixin 'transition-property'.
-        on line 86 of main.scss, in `transition-property'
-        from line 86 of main.scss
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Open Sans', sans-serif; }
 
-81: .strengthIndicator::before {
-82:     content: "";
-83:     display: block;
-84:     height: 100%;
-85: 
-86:     @include transition-property(width);
-87: 
-88:     @include transition-duration(250ms);
-89: 
-90:     @include transition-timing-function(ease-in);
-91: 
+/* dies ist ein kommentar */
+#main {
+  width: 990px;
+  margin: 0 auto; }
 
-Backtrace:
-main.scss:86:in `transition-property'
-main.scss:86
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:352:in `block in visit_mixin'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/stack.rb:98:in `block in with_mixin'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/stack.rb:115:in `with_frame'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/stack.rb:98:in `with_mixin'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:350:in `visit_mixin'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/stack.rb:79:in `block in with_base'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/stack.rb:115:in `with_frame'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/stack.rb:79:in `with_base'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:162:in `visit'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:434:in `block (2 levels) in visit_rule'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:434:in `map'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:434:in `block in visit_rule'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:432:in `visit_rule'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/stack.rb:79:in `block in with_base'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/stack.rb:115:in `with_frame'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/stack.rb:79:in `with_base'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:162:in `visit'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:52:in `map'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:161:in `visit'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:10:in `visit'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/root_node.rb:36:in `css_tree'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/engine.rb:384:in `_render_with_sourcemap'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/engine.rb:301:in `render_with_sourcemap'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/exec/sass_scss.rb:391:in `run'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/exec/sass_scss.rb:63:in `process_result'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/exec/base.rb:52:in `parse'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/lib/sass/exec/base.rb:19:in `parse!'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.4.25/bin/sass:13:in `<top (required)>'
-C:/Ruby26-x64/bin/sass:23:in `load'
-C:/Ruby26-x64/bin/sass:23:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Undefined mixin 'transition-property'.\A         on line 86 of main.scss, in `transition-property'\A         from line 86 of main.scss\A \A 81: .strengthIndicator::before {\A 82:     content: \"\";\A 83:     display: block;\A 84:     height: 100%;\A 85: \A 86:     @include transition-property(width);\A 87: \A 88:     @include transition-duration(250ms);\A 89: \A 90:     @include transition-timing-function(ease-in);\A 91: "; }
+input[type="text"], input[type="password"] {
+  border: 1px solid #000;
+  padding: 5px;
+  margin: 10px 5px 10px 5px;
+  width: 180px; }
+
+input[type="submit"] {
+  border: 1px solid #000;
+  border-radius: 0;
+  background-color: #fafafa;
+  margin: 10px 5px 10px 5px;
+  cursor: pointer; }
+
+label {
+  margin-left: 5px; }
+
+.passwordField {
+  width: 300px;
+  float: left; }
+
+.passwordFeedback {
+  width: 250px;
+  float: left; }
+
+.feedback {
+  margin: 10px 5px 10px 5px;
+  font-size: 11px;
+  font-weight: 600; }
+  .feedback.error {
+    color: #d9534f; }
+  .feedback.warning {
+    color: #f0ad4e; }
+  .feedback.success {
+    color: #5cb85c; }
+
+.strengthIndicator {
+  margin: 10px 5px 10px 5px;
+  width: 200px;
+  padding: 5px;
+  height: 13px;
+  border: 1px solid #d3d3d3; }
+
+.strengthIndicator::before {
+  content: "";
+  display: block;
+  height: 100%;
+  -moz-transition-property: width;
+  -o-transition-property: width;
+  -webkit-transition-property: width;
+  transition-property: width;
+  -moz-transition-duration: 250ms;
+  -o-transition-duration: 250ms;
+  -webkit-transition-duration: 250ms;
+  transition-duration: 250ms;
+  -moz-transition-timing-function: ease-in;
+  -o-transition-timing-function: ease-in;
+  -webkit-transition-timing-function: ease-in;
+  transition-timing-function: ease-in; }
+
+.passwordWrapper::after {
+  content: "";
+  display: block;
+  clear: both;
+  float: none; }
+
+.error .strengthIndicator::before {
+  width: 10%;
+  background-color: #d9534f; }
+
+.warning .strengthIndicator::before {
+  width: 60%;
+  background-color: #f0ad4e; }
+
+.success .strengthIndicator::before {
+  width: 100%;
+  background-color: #5cb85c; }
+
+.feedback.error, .feedback.warning, .feedback.success {
+  display: none; }
+
+.error .feedback.error {
+  display: block; }
+
+.warning .feedback.warning {
+  display: block; }
+
+.success .feedback.success {
+  display: block; }
+
+/*# sourceMappingURL=main.css.map */

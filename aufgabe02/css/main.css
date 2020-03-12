@@ -1,69 +1,140 @@
-/*
-Error: Undefined mixin 'transition-property'.
-        on line 86 of C:\Users\Hannes\OneDrive - Fachhochschule Kufstein Tirol Bildungs GmbH\2.Semester\Web-Development\ue03-wd2020-HannesSachsenmaier\aufgabe02\sass\main.scss, in `transition-property'
-        from line 86 of C:\Users\Hannes\OneDrive - Fachhochschule Kufstein Tirol Bildungs GmbH\2.Semester\Web-Development\ue03-wd2020-HannesSachsenmaier\aufgabe02\sass\main.scss
+/* line 8, ../sass/main.scss */
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Open Sans', sans-serif;
+}
 
-81: .strengthIndicator::before {
-82:     content: "";
-83:     display: block;
-84:     height: 100%;
-85: 
-86:     @include transition-property(width);
-87: 
-88:     @include transition-duration(250ms);
-89: 
-90:     @include transition-timing-function(ease-in);
-91: 
+/* dies ist ein kommentar */
+/* line 16, ../sass/main.scss */
+#main {
+  width: 990px;
+  margin: 0 auto;
+}
 
-Backtrace:
-C:\Users\Hannes\OneDrive - Fachhochschule Kufstein Tirol Bildungs GmbH\2.Semester\Web-Development\ue03-wd2020-HannesSachsenmaier\aufgabe02\sass\main.scss:86:in `transition-property'
-C:\Users\Hannes\OneDrive - Fachhochschule Kufstein Tirol Bildungs GmbH\2.Semester\Web-Development\ue03-wd2020-HannesSachsenmaier\aufgabe02\sass\main.scss:86
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:352:in `block in visit_mixin'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:98:in `block in with_mixin'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:98:in `with_mixin'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:350:in `visit_mixin'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `with_base'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `block (2 levels) in visit_rule'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `map'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `block in visit_rule'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:442:in `visit_rule'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `with_base'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `map'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:161:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:10:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:36:in `css_tree'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:389:in `_render_with_sourcemap'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:307:in `render_with_sourcemap'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:391:in `run'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:63:in `process_result'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:52:in `parse'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:19:in `parse!'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/bin/sass:13:in `<top (required)>'
-C:/Program Files (x86)/Koala/bin/sass:22:in `load'
-C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Undefined mixin 'transition-property'.\A         on line 86 of C:\Users\Hannes\OneDrive - Fachhochschule Kufstein Tirol Bildungs GmbH\2.Semester\Web-Development\ue03-wd2020-HannesSachsenmaier\aufgabe02\sass\main.scss, in `transition-property'\A         from line 86 of C:\Users\Hannes\OneDrive - Fachhochschule Kufstein Tirol Bildungs GmbH\2.Semester\Web-Development\ue03-wd2020-HannesSachsenmaier\aufgabe02\sass\main.scss\A \A 81: .strengthIndicator::before {\A 82:     content: \"\";\A 83:     display: block;\A 84:     height: 100%;\A 85: \A 86:     @include transition-property(width);\A 87: \A 88:     @include transition-duration(250ms);\A 89: \A 90:     @include transition-timing-function(ease-in);\A 91: "; }
+/* line 22, ../sass/main.scss */
+input[type="text"], input[type="password"] {
+  border: 1px solid #000;
+  padding: 5px;
+  margin: 10px 5px 10px 5px;
+  width: 180px;
+}
+
+/* line 30, ../sass/main.scss */
+input[type="submit"] {
+  border: 1px solid #000;
+  border-radius: 0;
+  background-color: #fafafa;
+  margin: 10px 5px 10px 5px;
+  cursor: pointer;
+}
+
+/* line 38, ../sass/main.scss */
+label {
+  margin-left: 5px;
+}
+
+/* line 42, ../sass/main.scss */
+.passwordField {
+  width: 300px;
+  float: left;
+}
+
+/* line 47, ../sass/main.scss */
+.passwordFeedback {
+  width: 250px;
+  float: left;
+}
+
+/* line 52, ../sass/main.scss */
+.feedback {
+  margin: 10px 5px 10px 5px;
+  font-size: 11px;
+  font-weight: 600;
+}
+/* line 57, ../sass/main.scss */
+.feedback.error {
+  color: #d9534f;
+}
+/* line 61, ../sass/main.scss */
+.feedback.warning {
+  color: #f0ad4e;
+}
+/* line 65, ../sass/main.scss */
+.feedback.success {
+  color: #5cb85c;
+}
+
+/* line 72, ../sass/main.scss */
+.strengthIndicator {
+  margin: 10px 5px 10px 5px;
+  width: 200px;
+  padding: 5px;
+  height: 13px;
+  border: 1px solid #d3d3d3;
+}
+
+/* line 80, ../sass/main.scss */
+.strengthIndicator::before {
+  content: "";
+  display: block;
+  height: 100%;
+  -moz-transition-property: width;
+  -o-transition-property: width;
+  -webkit-transition-property: width;
+  transition-property: width;
+  -moz-transition-duration: 250ms;
+  -o-transition-duration: 250ms;
+  -webkit-transition-duration: 250ms;
+  transition-duration: 250ms;
+  -moz-transition-timing-function: ease-in;
+  -o-transition-timing-function: ease-in;
+  -webkit-transition-timing-function: ease-in;
+  transition-timing-function: ease-in;
+}
+
+/* line 94, ../sass/main.scss */
+.passwordWrapper::after {
+  content: "";
+  display: block;
+  clear: both;
+  float: none;
+}
+
+/* line 101, ../sass/main.scss */
+.error .strengthIndicator::before {
+  width: 10%;
+  background-color: #d9534f;
+}
+
+/* line 106, ../sass/main.scss */
+.warning .strengthIndicator::before {
+  width: 60%;
+  background-color: #f0ad4e;
+}
+
+/* line 111, ../sass/main.scss */
+.success .strengthIndicator::before {
+  width: 100%;
+  background-color: #5cb85c;
+}
+
+/* line 117, ../sass/main.scss */
+.feedback.error, .feedback.warning, .feedback.success {
+  display: none;
+}
+
+/* line 121, ../sass/main.scss */
+.error .feedback.error {
+  display: block;
+}
+
+/* line 125, ../sass/main.scss */
+.warning .feedback.warning {
+  display: block;
+}
+
+/* line 129, ../sass/main.scss */
+.success .feedback.success {
+  display: block;
+}
