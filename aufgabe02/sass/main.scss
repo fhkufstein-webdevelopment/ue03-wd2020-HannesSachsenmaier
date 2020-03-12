@@ -1,5 +1,5 @@
-@import "compass/reset";
-@import "compass/css3";
+/*@import "compass/reset";*/
+/*@import "compass/css3";*/
 
 $black: #000;
 $red: #d9534f;
@@ -83,25 +83,13 @@ label {
     display: block;
     height: 100%;
 
-    -moz-transition-property: width;
-    -o-transition-property: width;
-    -webkit-transition-property: width;
-    transition-property: width;
+    @include transition-property(width);
 
-    -moz-transition-delay: 0;
-    -o-transition-delay: 0;
-    -webkit-transition-delay: 0;
-    transition-delay: 0;
+    @include transition-duration(250ms);
 
-    -moz-transition-duration: 250ms;
-    -o-transition-duration: 250ms;
-    -webkit-transition-duration: 250ms;
-    transition-duration: 250ms;
+    @include transition-timing-function(ease-in);
 
-    -moz-transition-timing-function: linear;
-    -o-transition-timing-function: linear;
-    -webkit-transition-timing-function: linear;
-    transition-timing-function: linear;
+
 }
 
 .passwordWrapper::after {
@@ -124,6 +112,7 @@ label {
 .success .strengthIndicator::before {
     width: 100%;
     background-color: $green;
+
 }
 
 .feedback.error, .feedback.warning, .feedback.success {
