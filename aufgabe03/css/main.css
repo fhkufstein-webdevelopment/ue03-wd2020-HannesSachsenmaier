@@ -1,53 +1,160 @@
-/*
-Error: File to import not found or unreadable: compass/reset.
-       Load path: C:/Users/Hannes/OneDrive - Fachhochschule Kufstein Tirol Bildungs GmbH/2.Semester/Web-Development/ue03-wd2020-HannesSachsenmaier/aufgabe03/sass
-        on line 2 of C:\Users\Hannes\OneDrive - Fachhochschule Kufstein Tirol Bildungs GmbH\2.Semester\Web-Development\ue03-wd2020-HannesSachsenmaier\aufgabe03\sass\main.scss
+@charset "UTF-8";
+/* line 3, ../sass/_base.scss */
+* {
+  /* nachdem es bei ein paar von Ihnen Schwierigkeiten mit den Mixins beim import von "compass/css3" gegeben hat - Verzichte ich auf Mixins und schreibe diese mit Browserpräfixen aus */
+  -webit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
 
-1: @charset "utf-8";
-2: @import "compass/reset";
-3: //sollte diese folgende Zeile zu einer Fehlermeldung führen - kommentieren Sie die folgende und die obere Zeile aus und kommentieren Sie die nachfolgende ein
-4: @import "compass/css3";
-5: 
-6: 
-7: 
+/* inkludiert die Datei _base.scss */
+/* line 3, ../sass/_button.scss */
+.btn {
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  color: #333;
+  background-color: #fff;
+  text-shadow: 0 1px 0 #fff;
+  background-image: -webkit-linear-gradient(top, #fff 0, #e0e0e0 100%);
+  background-image: -o-linear-gradient(top, #fff 0, #e0e0e0 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#e0e0e0));
+  background-image: linear-gradient(to bottom, #fff 0, #e0e0e0 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffe0e0e0', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+  background-repeat: repeat-x;
+  border-color: #dbdbdb;
+  border-color: #ccc;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
+  text-decoration: none;
+}
+/* line 44, ../sass/_button.scss */
+.btn:hover {
+  background-color: #e0e0e0;
+  background-position: 0 -15px;
+  color: #333;
+  background-color: #e6e6e6;
+  border-color: #adadad;
+  color: #333;
+  text-decoration: none;
+  text-shadow: 0 1px 0 #fff;
+  background-image: -webkit-linear-gradient(top, #fff 0, #e0e0e0 100%);
+  background-image: -o-linear-gradient(top, #fff 0, #e0e0e0 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#e0e0e0));
+  background-image: linear-gradient(to bottom, #fff 0, #e0e0e0 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffe0e0e0', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+  background-repeat: repeat-x;
+  border-color: #dbdbdb;
+  border-color: #ccc;
+}
+/* line 72, ../sass/_button.scss */
+.btn.green:hover {
+  color: #fff;
+  background-color: #5cb85c;
+  border-color: #4cae4c;
+  background-image: -webkit-linear-gradient(top, #5cb85c 0, #419641 100%);
+  background-image: -o-linear-gradient(top, #5cb85c 0, #419641 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#5cb85c), to(#419641));
+  background-image: linear-gradient(to bottom, #5cb85c 0, #419641 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff5cb85c', endColorstr='#ff419641', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+  background-repeat: repeat-x;
+  border-color: #3e8f3e;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
+  background-color: #419641;
+  background-position: 0 -15px;
+  color: #fff;
+  border-color: #398439;
+  text-decoration: none;
+}
 
-Backtrace:
-C:\Users\Hannes\OneDrive - Fachhochschule Kufstein Tirol Bildungs GmbH\2.Semester\Web-Development\ue03-wd2020-HannesSachsenmaier\aufgabe03\sass\main.scss:2
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/import_node.rb:67:in `rescue in import'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/import_node.rb:45:in `import'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/import_node.rb:28:in `imported_file'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/import_node.rb:37:in `css_import?'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:314:in `visit_import'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `with_base'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `map'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:161:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:10:in `visit'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:36:in `css_tree'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:389:in `_render_with_sourcemap'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:307:in `render_with_sourcemap'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:391:in `run'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:63:in `process_result'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:52:in `parse'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:19:in `parse!'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/bin/sass:13:in `<top (required)>'
-C:/Program Files (x86)/Koala/bin/sass:22:in `load'
-C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: File to import not found or unreadable: compass/reset.\A        Load path: C:/Users/Hannes/OneDrive - Fachhochschule Kufstein Tirol Bildungs GmbH/2.Semester/Web-Development/ue03-wd2020-HannesSachsenmaier/aufgabe03/sass\A         on line 2 of C:\Users\Hannes\OneDrive - Fachhochschule Kufstein Tirol Bildungs GmbH\2.Semester\Web-Development\ue03-wd2020-HannesSachsenmaier\aufgabe03\sass\main.scss\A \A 1: @charset \"utf-8\";\A 2: @import \"compass/reset\";\A 3: //sollte diese folgende Zeile zu einer Fehlermeldung führen - kommentieren Sie die folgende und die obere Zeile aus und kommentieren Sie die nachfolgende ein\A 4: @import \"compass/css3\";\A 5: \A 6: \A 7: "; }
+/* inkludiert die Datei _button.scss */
+/* line 15, ../sass/main.scss */
+.btn {
+  -moz-transition-property: padding;
+  -o-transition-property: padding;
+  -webkit-transition-property: padding;
+  transition-property: padding;
+  -moz-transition-duration: 600ms;
+  -o-transition-duration: 600ms;
+  -webkit-transition-duration: 600ms;
+  transition-duration: 600ms;
+  -moz-transition-delay: 0ms;
+  -o-transition-delay: 0ms;
+  -webkit-transition-delay: 0ms;
+  transition-delay: 0ms;
+  -moz-transition-timing-function: linear;
+  -o-transition-timing-function: linear;
+  -webkit-transition-timing-function: linear;
+  transition-timing-function: linear;
+}
+/* line 21, ../sass/main.scss */
+.btn.ease-in {
+  -moz-transition-timing-function: ease-in;
+  -o-transition-timing-function: ease-in;
+  -webkit-transition-timing-function: ease-in;
+  transition-timing-function: ease-in;
+}
+/* line 25, ../sass/main.scss */
+.btn.ease-out {
+  -moz-transition-timing-function: ease-out;
+  -o-transition-timing-function: ease-out;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+/* line 29, ../sass/main.scss */
+.btn.ease-in-out {
+  -moz-transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+}
+/* line 33, ../sass/main.scss */
+.btn.green {
+  -moz-transition-property: color;
+  -o-transition-property: color;
+  -webkit-transition-property: color;
+  transition-property: color;
+}
+/* line 37, ../sass/main.scss */
+.btn.animation {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: auto;
+  bottom: auto;
+  animation-timing-function: linear;
+}
+
+/* line 47, ../sass/main.scss */
+body:hover .animation {
+  animation-name: myanimation2;
+  animation-duration: 5s;
+}
+
+/* line 53, ../sass/main.scss */
+.btn:hover {
+  padding-left: 25px;
+  padding-right: 25px;
+}

@@ -1,7 +1,8 @@
 @charset "utf-8";
-@import "compass/reset";
+//@import "compass/reset";
 //sollte diese folgende Zeile zu einer Fehlermeldung führen - kommentieren Sie die folgende und die obere Zeile aus und kommentieren Sie die nachfolgende ein
-@import "compass/css3";
+//@import "compass/css3";
+@import "mixinFallback";
 
 
 
@@ -9,23 +10,28 @@
 @import "button"; /* inkludiert die Datei _button.scss */
 
 
+
+
 .btn {
-    /* TODO */
+    @include transition-property(padding);
+    @include transition-duration(600ms);
+    @include transition-delay(0ms);
+    @include transition-timing-function(linear);
 
     &.ease-in {
-        /* TODO */
+        @include transition-timing-function(ease-in)
     }
 
     &.ease-out {
-        /* TODO */
+        @include transition-timing-function(ease-out)
     }
 
     &.ease-in-out {
-        /* TODO */
+        @include transition-timing-function(ease-in-out)
     }
 
     &.green {
-        /* TODO */
+        @include transition-property(color)
     }
 
     &.animation {

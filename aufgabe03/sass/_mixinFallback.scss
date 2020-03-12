@@ -1,0 +1,29 @@
+@charset "utf-8";
+
+@mixin transition-property($property) {
+    -moz-transition-property: $property;
+    -o-transition-property: $property;
+    -webkit-transition-property: $property;
+    transition-property: $property;
+}
+
+@mixin transition-delay($time) {
+    -moz-transition-delay: $time;
+    -o-transition-delay: $time;
+    -webkit-transition-delay: $time;
+    transition-delay: $time;
+}
+
+@mixin transition-duration($time) {
+    -moz-transition-duration: $time;
+    -o-transition-duration: $time;
+    -webkit-transition-duration: $time;
+    transition-duration: $time;
+}
+
+@mixin transition-timing-function($function) {
+    -moz-transition-timing-function: $function;
+    -o-transition-timing-function: $function;
+    -webkit-transition-timing-function: $function;
+    transition-timing-function: $function;
+}
