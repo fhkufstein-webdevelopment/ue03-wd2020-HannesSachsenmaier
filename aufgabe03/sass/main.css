@@ -120,12 +120,10 @@
     -webkit-transition-property: color;
     transition-property: color; }
   .btn.animation {
-    position: absolute;
-    left: 0;
-    top: 0;
-    right: auto;
-    bottom: auto;
-    animation-timing-function: linear; }
+    display: none; }
+    @media (min-width: 990px) {
+      .btn.animation {
+        display: block; } }
 
 body:hover .animation {
   animation-name: myanimation2;

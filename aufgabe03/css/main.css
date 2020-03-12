@@ -90,7 +90,7 @@
 }
 
 /* inkludiert die Datei _button.scss */
-/* line 15, ../sass/main.scss */
+/* line 23, ../sass/main.scss */
 .btn {
   -moz-transition-property: padding;
   -o-transition-property: padding;
@@ -109,51 +109,52 @@
   -webkit-transition-timing-function: linear;
   transition-timing-function: linear;
 }
-/* line 21, ../sass/main.scss */
+/* line 29, ../sass/main.scss */
 .btn.ease-in {
   -moz-transition-timing-function: ease-in;
   -o-transition-timing-function: ease-in;
   -webkit-transition-timing-function: ease-in;
   transition-timing-function: ease-in;
 }
-/* line 25, ../sass/main.scss */
+/* line 33, ../sass/main.scss */
 .btn.ease-out {
   -moz-transition-timing-function: ease-out;
   -o-transition-timing-function: ease-out;
   -webkit-transition-timing-function: ease-out;
   transition-timing-function: ease-out;
 }
-/* line 29, ../sass/main.scss */
+/* line 37, ../sass/main.scss */
 .btn.ease-in-out {
   -moz-transition-timing-function: ease-in-out;
   -o-transition-timing-function: ease-in-out;
   -webkit-transition-timing-function: ease-in-out;
   transition-timing-function: ease-in-out;
 }
-/* line 33, ../sass/main.scss */
+/* line 41, ../sass/main.scss */
 .btn.green {
   -moz-transition-property: color;
   -o-transition-property: color;
   -webkit-transition-property: color;
   transition-property: color;
 }
-/* line 37, ../sass/main.scss */
+/* line 45, ../sass/main.scss */
 .btn.animation {
-  position: absolute;
-  left: 0;
-  top: 0;
-  right: auto;
-  bottom: auto;
-  animation-timing-function: linear;
+  display: none;
+}
+@media (min-width: 990px) {
+  /* line 45, ../sass/main.scss */
+  .btn.animation {
+    display: block;
+  }
 }
 
-/* line 47, ../sass/main.scss */
+/* line 52, ../sass/main.scss */
 body:hover .animation {
   animation-name: myanimation2;
   animation-duration: 5s;
 }
 
-/* line 53, ../sass/main.scss */
+/* line 58, ../sass/main.scss */
 .btn:hover {
   padding-left: 25px;
   padding-right: 25px;

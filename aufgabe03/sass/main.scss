@@ -9,7 +9,15 @@
 @import "base"; /* inkludiert die Datei _base.scss */
 @import "button"; /* inkludiert die Datei _button.scss */
 
+@mixin margin($widthTop,$widthSides,$widthBottom, $widthLeft){
+    width: $widthTop $widthSides $widthBottom $widthLeft
+}
 
+@mixin breakpoint ($width){
+    @media (min-width: $width){
+        display: block;
+    }
+}
 
 
 .btn {
@@ -35,12 +43,9 @@
     }
 
     &.animation {
-        position: absolute;
-        left:0;
-        top:0;
-        right:auto;
-        bottom:auto;
-        animation-timing-function: linear;
+        display: none;
+
+        @include breakpoint(990px)
     }
 }
 
